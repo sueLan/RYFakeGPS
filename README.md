@@ -70,6 +70,12 @@ https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLL
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1126909-9dbcead93513214b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-然而在此所有app调用定位服务后，获取到的都是我在FakeGPS工程中选的Default Location的定位信息。Why ? 各种联想中...
+然而在此所有app调用定位服务后，获取到的都是我在FakeGPS工程中选的Default Location的定位信息。Why ? 有人说是bug,http://stackoverflow.com/questions/14285453/xcode-default-simulated-location
+
+```
+I happened to send a release (of my private apps) to Apple having the GPX files, by misstake. The app is not affected. It seems there is some kind of bug that overwrites the GPS values on the device when debugging from XCode. Only way to fix is to restart the device (or maybe to build without GPX files(?)).
+```
+
+各种联想中...
 
 
